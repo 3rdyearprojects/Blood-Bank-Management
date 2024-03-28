@@ -60,7 +60,12 @@
         <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
     </div>
 </nav>
-
+<script>
+    // Toggle mobile menu
+    document.querySelector('.mobile-menu-button').addEventListener('click', function () {
+        document.querySelector('.mobile-menu').classList.toggle('hidden');
+    });
+</script>
 
 
     <header class="bg-blue-500 text-white text-center p-12">

@@ -46,62 +46,55 @@
     </style>
     
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Navigation -->
+  <!-- Navigation -->
     <nav class="bg-blue-300 text-red-700 z-10 p-4 fade-in relative">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="font-semibold text-xl slide-in-left">Blood Bank Management</a>
-            <div class="hidden md:flex space-x-4">
-                <a href="about.html" class="hover:text-red-300 slide-in-left">About</a>
-                <a href="services.html" class="hover:text-red-300 slide-in-left">Services</a>
-                <div class="group inline-block relative">
-                    <button class="inline-flex items-center">
-                        <span class="mr-1">Donor</span>
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.516 7.548c-2-2-5.516-1.12-5.516 3.006 0 4.768 7.483 9.675 7.483 9.675s7.483-4.907 7.483-9.675c0-4.125-3.516-5.006-5.516-3.006-1.493 1.493-.945 4.024-2.967 4.024-2.022 0-1.474-2.531-2.967-4.024z"/></svg>
-                    </button>
-                    <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                        <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="registration.html">Donor Registration</a></li>
-                        <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="registration.html">Donor Login</a></li>
-                    </ul>
-                </div>
-                <a href="admin-login.html" class="hover:text-red-300 slide-in-left">Admin Login</a>
-                <a href="contact.html" class="hover:text-red-300 slide-in-left">Contact</a>
-            </div>
-            <div class="md:hidden flex items-center">
-                <button class="mobile-menu-button">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="font-semibold text-xl tracking-tight">Blood Bank Management System</a>
+        <div class="hidden md:flex space-x-4 items-center">
+            <a href="index.html" class="hover:text-red-300 text-white">Home</a>
+            <a href="about.html" class="hover:text-red-300 ">About</a>
+            <a href="services.html" class="hover:text-red-300">Services</a>
+            <!-- Dropdown Menu for Donor -->
+            <div class="group inline-block relative">
+                <button class="font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <span>Donor</span>
+                    <svg class="fill-current h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.516 7.548c-2-2-5.516-1.12-5.516 3.006 0 4.768 7.483 9.675 7.483 9.675s7.483-4.907 7.483-9.675c0-4.125-3.516-5.006-5.516-3.006-1.493 1.493-.945 4.024-2.967 4.024-2.022 0-1.474-2.531-2.967-4.024z"/></svg>
                 </button>
+                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                    <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="registration.html">Donor Registration</a></li>
+                    <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="registration.html">Donor Login</a></li>
+                </ul>
             </div>
+            <!-- Admin Login Link -->
+            <a href="admin-login.html" class="hover:text-red-300">Admin Login</a>
+            <a href="contact.html" class="hover:text-red-300">Contact</a>
         </div>
-        <div class="mobile-menu hidden">
-            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
-            <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
-            <a href="registration.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Donor Registration</a>
-            <a href="registraton.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Donor Login</a>
-            <a href="admin-login.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Admin Login</a>
-            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
         </div>
-    </nav>
-
-    <!-- Add your page content here -->
-
-    <script>
-        // Mobile menu toggle script
-        document.querySelector('.mobile-menu-button').addEventListener('click', () => {
-            document.querySelector('.mobile-menu').classList.toggle('hidden');
-        });
-    </script>
-
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden">
+        <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+        <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+        <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+        <a href="registration.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Donor Registration</a>
+        <a href="registration.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Donor Login</a>
+        <a href="admin-login.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Admin Login</a>
+        <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+    </div>
+</nav>
 
 <script>
-    // Mobile menu toggle
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
-
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
+    // Toggle mobile menu
+    document.querySelector('.mobile-menu-button').addEventListener('click', function () {
+        document.querySelector('.mobile-menu').classList.toggle('hidden');
     });
 </script>
+
 
 
     <!-- Hero Section -->
